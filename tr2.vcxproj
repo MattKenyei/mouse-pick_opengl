@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="Source.cpp" />
@@ -137,6 +138,7 @@
     <None Include="Fragment.frag" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="glad.h" />
     <ClInclude Include="glm\glm.hpp" />
     <ClInclude Include="glm\gtc\matrix_transform.hpp" />

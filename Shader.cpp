@@ -9,6 +9,10 @@ void Shader::SetMatrix4F(const std::string& name, glm::mat4& m) const
 {
 	glUniformMatrix4fv(glGetUniformLocation(programID, name.c_str()), 1, GL_FALSE, glm::value_ptr(m));
 }
+void Shader::SetColor(const std::string& name, float* vec) const
+{
+	glUniform3f(glGetUniformLocation(programID, name.c_str()), vec[0], vec[1], vec[2]);
+}
 
 Shader::Shader(const char* vertexPath, const char* fragmentPath)
 {
